@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    line-height: 1;
+    appearance: none;
+}
+
+body,html {
+ background-image: url(https://resize.cdn.otakumode.com/ex/1600.900/u/2f5592b8544c48d18ce2d8cfa30ed85a.jpg);
+ background-size: contain;
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width:1000px) {
+    body,html {
+        background-image: url(https://i1.sndcdn.com/artworks-6bmsH87i5sCBavmS-4I33aw-t500x500.jpg);
+       background-position: center top;
+       background-repeat: no-repeat;
+       background-size:cover;
+       height: 100vh;
+    
+
+        
+
+       }
+}

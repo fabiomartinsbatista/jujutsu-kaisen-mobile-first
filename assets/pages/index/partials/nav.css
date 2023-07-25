@@ -1,0 +1,66 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #090d171a;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    padding: 20px 60px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+nav h2.logo {
+    font-family: var(--bold);
+    color: var(--cor-branco);
+    font-size: 1.3rem;
+    letter-spacing: 10px;
+}
+
+nav .opcoes a {
+    font-family: var(--regular);
+    color: var(--cor-branco);
+    font-size: 0.9rem;
+    text-decoration: none;
+    margin: 0 0 0 25px;
+    transition: all 0.3s;
+}
+
+nav .opcoes a:hover {
+    opacity: 0.5;
+}
+
+nav .opcoes a.destaque {
+    font-family: var(--bold);
+    color: var(--cor-vermelho);
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width:1000px) {
+    nav {
+        padding: 20px; 
+    }
+    
+    nav .opcoes a {
+      display: none;
+    }
+    
+    nav .opcoes a.destaque {
+      display: flex;
+    }
+
+    nav h2.logo {
+        font-family: var(--jujutsu);
+        color: var(--cor-branco);
+        font-size: 1.7rem;
+        letter-spacing: 0px;
+        
+    }
+
+    
+}

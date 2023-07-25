@@ -1,0 +1,134 @@
+section.topo {
+    display:flex ;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 80px;
+    position: relative;
+    overflow: hidden ;
+}
+
+section.topo a {
+    font-family: var(--bold);
+    font-size: 1rem;
+    color: var(--cor-branco);
+    background-color: var(--cor-vermelho);
+    text-decoration: none;
+    padding: 15px 50px;
+    border-radius: 50px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+section.topo a:hover {
+    background-color: var(--cor-branco);
+    color: var(--cor-vermelho);
+}
+
+section.topo h1 {
+    font-family: var(--bold);
+    font-size: 2rem;
+    color: var(--cor-branco);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    line-height: 1.2;
+    z-index: 2;
+}
+
+section.topo h1 span {
+    color: var(--cor-vermelho);
+}
+
+section.topo iframe {
+    width: 100%;
+    max-width: 640px;
+    height: 360px;
+    margin: 30px 0;
+    border-radius: 20px;
+    z-index: 2;
+}
+
+section.topo img.circulo {
+    position: absolute;
+    z-index: 1;
+    animation:  girarcirculo 450s linear infinite ;
+}
+
+@keyframes girarcirculo {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotate(360deg);
+    }
+    
+}
+
+section.topo img.circulo.um {
+    top: -650px;
+    left: -500px;
+}
+
+section.topo img.circulo.dois {
+    bottom: -500px;
+    right: -300px;
+    
+}
+
+/*RESPONSIVO*/
+
+@media screen and (max-width:1000px) {
+    section.topo {
+       
+        padding: 100px 20px 60px 20px;
+    }
+
+    section.topo h1 {
+        
+        font-size: 1.2rem;
+        line-height: 1.5;
+      
+    }
+     
+    section.topo iframe {
+        max-width: 320px;
+        height: 180px;
+        margin: 30px 0;
+        border-radius: 10px;
+    }
+    
+    section.topo img.circulo {
+        position: absolute;
+        z-index: 1;
+        animation:  girarcirculo 70s linear infinite ;
+    }
+    
+    @keyframes girarcirculo {
+        0%{
+            transform: rotate(0deg);
+        }
+    
+        100%{
+            transform: rotate(360deg);
+        }
+        
+    }
+    
+    section.topo img.circulo.um {
+        top: -750px;
+        left: -600px;
+    }
+    
+    section.topo img.circulo.dois {
+        bottom: -700px;
+        right: -500px;
+    }
+
+    section.topo a {
+        
+        padding: 10px 20px;
+      
+    }
+}
